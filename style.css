@@ -1,0 +1,90 @@
+/* Style Sheet for Calculator App */
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsla(0, 0%, 10%);
+}
+
+.calculator{
+    align-items: center;
+    background-color: hsla(0, 0%, 15%);
+    color: white;
+    border: 2px solid hsl(0, 0%, 30%);
+    border-radius: 10px;
+    padding: 20px;
+    height: 500px;
+    width: 470px;
+    overflow: hidden;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+button{
+    font-weight: bold;
+    width: 100px;
+    height: 60px;
+    font-size: 28px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background-color: hsl(0, 0%, 55%);
+    color: white;
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 65%);
+    transition: background-color 0.2s, transform 0.2s;
+    transform: scale(1.05);
+}
+
+button:active{
+    transition: background-color 0.2s, transform 0.2s;
+    background-color: hsl(0, 0%, 76%);
+    transform: scale(0.95);
+}
+
+button:focus{
+    outline: none;
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+.operator{
+    background-color: hsl(24, 100%, 55%);
+}
+.operator:hover{
+    background-color: hsl(24, 100%, 65%);
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+#display{
+    width: 91%;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    font-size: 48px;
+    padding: 20px;
+    border: 0px solid hsl(0, 0%, 30%);
+    border-radius: 10px;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    caret-color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
