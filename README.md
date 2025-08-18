@@ -3,6 +3,8 @@
 ## Overview
 This Calculator App is a clean, intuitive, and responsive web-based calculator built using HTML, CSS, and JavaScript. It supports basic arithmetic operations including addition, subtraction, multiplication, division, and parentheses for grouping expressions.
 
+![calculator app screenshot](calc-app.PNG)
+
 ## Features
 - User-friendly interface with a clear display.
 - Supports digits (0-9), decimal points, and basic operators (`+`, `-`, `*`, `/`).
